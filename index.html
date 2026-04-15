@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Node Navigator - High Performance Map Search</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app-container">
+        <canvas id="tree-canvas"></canvas>
+
+        <div class="search-panel">
+            <div class="search-group">
+                <label>精確搜尋 (Exact Match - Green)</label>
+                <div class="input-wrapper">
+                    <input type="text" id="search-exact" class="exact-input" placeholder="包含空格的完整字串...">
+                </div>
+            </div>
+            
+            <div class="search-group">
+                <label>聯結搜尋 (OR Logic - Orange)</label>
+                <div class="input-wrapper">
+                    <input type="text" id="search-or" class="or-input" placeholder="空格拆分關鍵字 (例如: map currency)">
+                </div>
+            </div>
+        </div>
+
+        <div id="tooltip">
+            <div class="tooltip-name" id="tt-name"></div>
+            <div class="tooltip-stat" id="tt-stat"></div>
+        </div>
+
+        <div class="status-bar" id="status-bar">
+            系統初始化中...
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
