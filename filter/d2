@@ -20,7 +20,14 @@ Show
     Class "Gems"
     GemLevel >= 20
 Show
-    Class "Currency" "Stackable Currency" "Maps" "Map Fragments" "Misc Map Items" "Expedition Logbooks" "Sanctum Research" "Divination Card" "Jewels" "Abyss Jewel" "Quest Items" "Pantheon Soul" "Labyrinth Item" "Heist" "Contract" "Blueprint" "Trinkets"
+    Class "Gold" "Currency"
+    BaseType "Scroll of Wisdom" "Portal Scroll" "Gold"
+Show
+    Class "Jewels" "Abyss Jewel"
+    ItemLevel >= 85
+    MinimapIcon 2 White Circle
+Show
+    Class "Currency" "Stackable Currency" "Maps" "Map Fragments" "Misc Map Items" "Expedition Logbooks" "Sanctum Research" "Divination Card" "Quest Items" "Pantheon Soul" "Labyrinth Item" "Heist" "Contract" "Blueprint" "Trinkets"
     MinimapIcon 2 White Circle
 Show
     Class "Gems"
