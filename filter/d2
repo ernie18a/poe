@@ -43,7 +43,7 @@ Show
 Show
     Rarity = Rare
     ItemLevel >= 85
-    BaseType "Amethyst Ring" "Archdemon Crown" "Archon Kite Shield" "Assassin's Garb" "Black Maw Talisman" "Bone Helmet" "Bone Ring" "Convoking Wand" "Dreamquest Slippers" "Gold Amulet" "Gold Ring" "Golden Caligae" "Golden Mantle" "Golden Obi" "Golden Visage" "Golden Wreath" "Imperial Staff" "Lathi" "Legion Plate" "Leviathan Gauntlets" "Mechanical Belt" "Primordial Staff" "Prismatic Ring" "Royal Plate" "Royale Prismatic Ring" "Stygian Vise" "Three Rat Talisman" "Titan Plate" "Unset Amulet"
+    BaseType "Amethyst Ring" "Archdemon Crown" "Archon Kite Shield" "Assassin's Garb" "Black Maw Talisman" "Bone Helmet" "Bone Ring" "Convoking Wand" "Dreamquest Slippers" "Gold Amulet" "Gold Ring" "Golden Caligae" "Golden Mantle" "Golden Obi" "Golden Visage" "Golden Wreath" "Imperial Staff" "Lathi" "Legion Plate" "Leviathan Gauntlets" "Mechanical Belt" "Primordial Staff" "Prismatic Ring" "Royal Plate" "Stygian Vise" "Three Rat Talisman" "Titan Plate" "Unset Amulet"
     SetFontSize 35
     SetBorderColor 255 255 0
     MinimapIcon 2 White Circle
