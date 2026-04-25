@@ -1,0 +1,59 @@
+Show
+    Rarity = Unique
+    SetFontSize 40
+    MinimapIcon 1 Orange Star
+    PlayAlertSound 1 300
+Show
+    Sockets = 6
+    SetFontSize 35
+    MinimapIcon 2 White Circle
+Show
+    SocketGroup "RGB"
+    Width <= 2
+    Height <= 4
+    SetFontSize 35
+    MinimapIcon 2 White Circle
+Show
+    Class "Currency" "Stackable Currency"
+    MinimapIcon 2 White Circle
+Show
+    Class "Maps" "Map Fragments" "Misc Map Items" "Expedition Logbooks" "Sanctum Research"
+    MinimapIcon 2 White Circle
+Show
+    Class "Divination Card"
+    MinimapIcon 2 White Circle
+Show
+    Class "Jewels" "Abyss Jewel"
+    MinimapIcon 2 White Circle
+Show
+    Class "Gems"
+    Quality > 0
+    MinimapIcon 2 White Circle
+Show
+    Class "Gems"
+    BaseType "Vaal" "Awakened" "Empower" "Enlighten" "Enhance"
+    MinimapIcon 2 White Circle
+Show
+    Class "Gems"
+    GemLevel >= 19
+    MinimapIcon 2 White Circle
+Hide
+    Class "Gems"
+Show
+    Class "Quest Items" "Pantheon Soul" "Labyrinth Item" "Heist" "Contract" "Blueprint" "Trinkets"
+    MinimapIcon 2 White Circle
+Show
+    Class "Life Flasks" "Mana Flasks"
+    BaseType "Eternal Life Flask" "Eternal Mana Flask"
+    MinimapIcon 2 White Circle
+Show
+    Class "Utility Flasks"
+    MinimapIcon 2 White Circle
+Show
+    Rarity = Rare
+    BaseType "Amethyst Ring" "Archdemon Crown" "Archon Kite Shield" "Assassin's Garb" "Black Maw Talisman" "Bone Helmet" "Bone Ring" "Convoking Wand" "Dreamquest Slippers" "Gold Amulet" "Gold Ring" "Golden Caligae" "Golden Mantle" "Golden Obi" "Golden Visage" "Golden Wreath" "Imperial Staff" "Lathi" "Legion Plate" "Leviathan Gauntlets" "Mechanical Belt" "Primordial Staff" "Prismatic Ring" "Royal Plate" "Royale Prismatic Ring" "Stygian Vise" "Three Rat Talisman" "Titan Plate" "Unset Amulet"
+    SetFontSize 35
+    SetBorderColor 255 255 0
+    MinimapIcon 2 White Circle
+Hide
+    Rarity <= Rare
