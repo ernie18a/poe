@@ -16,27 +16,15 @@ Show
 Show
     Class "Gems"
     Quality >= 20
+Show
+    Class "Gems"
     GemLevel >= 20
 Show
-    Class "Currency" "Stackable Currency"
-    MinimapIcon 2 White Circle
-Show
-    Class "Maps" "Map Fragments" "Misc Map Items" "Expedition Logbooks" "Sanctum Research"
-    MinimapIcon 2 White Circle
-Show
-    Class "Divination Card"
-    MinimapIcon 2 White Circle
-Show
-    Class "Jewels" "Abyss Jewel"
+    Class "Currency" "Stackable Currency" "Maps" "Map Fragments" "Misc Map Items" "Expedition Logbooks" "Sanctum Research" "Divination Card" "Jewels" "Abyss Jewel" "Quest Items" "Pantheon Soul" "Labyrinth Item" "Heist" "Contract" "Blueprint" "Trinkets"
     MinimapIcon 2 White Circle
 Show
     Class "Gems"
     BaseType "Vaal" "Awakened" "Empower" "Enlighten" "Enhance"
-    MinimapIcon 2 White Circle
-Hide
-    Class "Gems"
-Show
-    Class "Quest Items" "Pantheon Soul" "Labyrinth Item" "Heist" "Contract" "Blueprint" "Trinkets"
     MinimapIcon 2 White Circle
 Show
     Class "Life Flasks" "Mana Flasks"
