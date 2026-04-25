@@ -24,6 +24,21 @@ Show
     ItemLevel >= 85
     MinimapIcon 2 White Circle
 Show
+    Class "Stackable Currency"
+    BaseType "Essence of Insanity" "Essence of Horror" "Essence of Delirium" "Essence of Hysteria"
+    SetFontSize 45
+    SetBorderColor 255 0 0
+    MinimapIcon 0 Red Star
+Show
+    Class "Stackable Currency"
+    BaseType "Deafening" "Shrieking"
+    SetFontSize 40
+    SetBorderColor 255 255 0
+    MinimapIcon 1 Yellow Circle
+Hide
+    Class "Stackable Currency"
+    BaseType "Essence"
+Show
     Class "Currency" "Stackable Currency" "Maps" "Map Fragments" "Misc Map Items" "Expedition Logbooks" "Sanctum Research" "Divination Card" "Quest Items" "Pantheon Soul" "Labyrinth Item" "Heist" "Contract" "Blueprint" "Trinkets"
     MinimapIcon 2 White Circle
 Show
