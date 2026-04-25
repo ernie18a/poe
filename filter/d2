@@ -20,9 +20,6 @@ Show
     Class "Gems"
     GemLevel >= 20
 Show
-    Class "Gold" "Currency"
-    BaseType "Scroll of Wisdom" "Portal Scroll" "Gold"
-Show
     Class "Jewels" "Abyss Jewel"
     ItemLevel >= 85
     MinimapIcon 2 White Circle
@@ -40,7 +37,8 @@ Show
     MinimapIcon 2 White Circle
 Show
     Class "Utility Flasks"
-    ItemLevel >= 85
+    BaseType "Amethyst Flask" "Bismuth Flask" "Gold Flask" "Granite Flask" "Jade Flask" "Quicksilver Flask"
+    ItemLevel >= 84
     MinimapIcon 2 White Circle
 Show
     Rarity = Rare
