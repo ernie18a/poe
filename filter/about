@@ -1,0 +1,547 @@
+About Item Filters
+Blocks
+The basic syntax is a collection of Show and Hide blocks that each specify conditions. Anything matched by a Show block will be shown and anything matched by a Hide block will be hidden. If there are multiple conditions in a block then all of them must be matched for the block to match an item.
+
+Name
+Description
+Show
+If any items are matched with the conditions in a "Show" Block, the item will be shown.
+Example
+Show
+                    Rarity >= Rare
+Hide
+If any items are matched with the conditions in a "Hide" Block, the item will be hidden. Only usable in Normal filters.
+Example
+Hide
+                    BaseType "Scroll of Wisdom"
+Minimal
+Matched items will have their label set to the minimum size with a transparent background. Only usable in Ruthless filters.
+Example
+Minimal
+                    BaseType "Scroll of Wisdom"
+Continue
+A "Show", "Hide", or "Minimal" block may use "Continue" to indicate that filter rule matching should not stop when an item matches this block. The example will hide all items dropped below level 85, unless they have 6 sockets and an item level above 80.
+Example
+Hide
+                    ItemLevel < 85
+                    Continue
+
+                Show
+                    ItemLevel > 80
+                    Sockets 6
+                    PlayEffect Blue
+Import
+Imports the specified filter contents into the current item filter. Use Optional after the filename to skip the file if it does not exist.
+Examples
+Import "MyCustomRules.filter"
+Import "MyOptionalRules.filter" Optional
+Operators
+Operator
+Description
+=
+Equal
+!
+Not equal
+!=
+Not equal
+<=
+Less than or equal
+>=
+Greater than or equal
+<
+Less than
+>
+Greater than
+==
+Exact match
+Conditions
+You can set conditions to show or hide items.
+
+Name
+Description
+AlternateQuality
+Filter by items with Alternate Quality.
+Values
+True / False
+Example
+AlternateQuality True
+PoE2-only
+AlwaysShow
+Filter by always shown items.
+Values
+True / False
+Example
+AlwaysShow True
+AnyEnchantment
+Filter by enchanted items.
+Values
+True / False
+Example
+AnyEnchantment True
+ArchnemesisMod
+Filter by Archnemesis modifier name.
+Values
+Archnemesis modifier name
+Example
+ArchnemesisMod "Toxic"
+AreaLevel
+Filter by items dropped in a particular level area/range. Primarily helps with leveling sections of item filters. This allows disabling leveling sections on high level characters, or showing wisdom scrolls and gems on stricter filters while leveling.
+Values
+Numeric
+Example
+AreaLevel < 30
+BaseArmour
+Filter by base Armour.
+Values
+Numeric
+Example
+BaseArmour > 500
+BaseDefencePercentile
+Filter by base Defence percentile. For non-equipment, base Defence percentile is zero. For equipment, this defaults to 100, as nonrandom defences are considered to be 100th percentile. Otherwise, this is calculated to be the average percentile of all base defence type values.
+Values
+Numeric
+Example
+BaseDefencePercentile >= 90
+BaseEnergyShield
+Filter by base Energy Shield.
+Values
+Numeric
+Example
+BaseEnergyShield > 200
+BaseEvasion
+Filter by base Evasion Rating.
+Values
+Numeric
+Example
+BaseEvasion >= 153
+BaseType
+Filter by base type name.
+Values
+Item name
+Example
+BaseType "Thicket Bow"
+BaseWard
+Filter by base Ward.
+Values
+Numeric
+Example
+BaseWard >= 20
+BlightedMap
+Filter by Blighted maps.
+Values
+True / False
+Example
+BlightedMap False
+Class
+Filter by item class name.
+Values
+Item class name
+Example
+Class Currency
+Corrupted
+Filter by corrupted or non-corrupted items.
+Values
+True / False
+Example
+Corrupted True
+CorruptedMods
+Filter by number of corrupted modifiers.
+Values
+Numeric
+Example
+CorruptedMods >= 1
+DropLevel
+Filter by the level that the item starts dropping at.
+Values
+Numeric
+Example
+DropLevel > 65
+ElderItem
+Filter by Elder items.
+Values
+True / False
+Example
+ElderItem True
+ElderMap
+Filter by Elder influenced or non-Elder influenced maps.
+Values
+True / False
+Example
+ElderMap False
+EnchantmentPassiveNode
+Filter Cluster Jewels by enchantment type.
+Values
+Cluster Jewel enchantment name
+Example
+EnchantmentPassiveNode "Damage over Time"
+EnchantmentPassiveNum
+Filter Cluster Jewels by number of passive skills. This condition checks only the "Adds X passive skills" modifiers.
+Values
+Numeric
+Example
+EnchantmentPassiveNum > 5
+Foulborn
+Filter by Foulborn items.
+Values
+True / False
+Example
+Foulborn False
+FracturedItem
+Filter by fractured or non-fractured items.
+Values
+True / False
+Example
+FracturedItem True
+GemLevel
+Filter by gem level.
+Values
+Numeric
+Example
+GemLevel > 15
+Deleted
+GemQualityType
+Filter by specific gem quality type.
+Values
+Superior, Divergent, Anomalous, Phantasmal
+Example
+GemQualityType Anomalous
+HasCruciblePassiveTree
+Filter by items that have a Crucible Passive Tree.
+Values
+True / False
+Example
+HasCruciblePassiveTree True
+HasEaterOfWorldsImplicit
+Filter by the Eater of Worlds implicit modifier tier (1:Lesser, 2:Greater, 3:Grand, 4:Exceptional, 5:Exquisite, 6:Perfect). The following example will show items that have Exceptional or higher Eater of Worlds implicit modifier tier.
+Values
+Numeric
+Example
+HasEaterOfWorldsImplicit >= 4
+HasEnchantment
+Filter by Enchantments.
+Values
+Numeric, Enchantment name
+Example
+HasEnchantment "Enchantment Bane Damage 2"
+HasExplicitMod
+Filter by mod name with numeric condition for number of modifiers.
+Values
+Numeric, Mod name
+Example
+HasExplicitMod >=2 "of Haast" "of Tzteosh" "of Ephij"
+HasImplicitMod
+Filter by items that have at least one implicit modifier.
+Values
+True / False
+Example
+HasImplicitMod True
+HasInfluence
+Filter by influenced items.
+Values
+Shaper, Elder, Crusader, Hunter, Redeemer, Warlord, None
+Example
+HasInfluence Shaper
+HasSearingExarchImplicit
+Filter by the Searing Exarch implicit modifier tier (1:Lesser, 2:Greater, 3:Grand, 4:Exceptional, 5:Exquisite, 6:Perfect). The following example will show items that have Grand or higher Searing Exarch implicit modifier tier.
+Values
+Numeric
+Example
+HasSearingExarchImplicit >= 3
+PoE2-only
+HasVaalUniqueMod
+Filter by items with Vaal Unique mod.
+Values
+True / False
+Example
+HasVaalUniqueMod True
+Height
+The height of the item in your inventory.
+Values
+Numeric
+Example
+Height <= 2
+Identified
+Filter by identified items.
+Values
+True / False
+Example
+Identified True
+New
+Imbued
+Filter by imbued gems.
+Values
+True / False
+Example
+Imbued True
+PoE2-only
+IsVaalUnique
+Filter by Vaal Unique items.
+Values
+True / False
+Example
+IsVaalUnique True
+ItemLevel
+Filter by item level.
+Values
+Numeric
+Example
+ItemLevel >= 65
+LinkedSockets
+Filter by the size of the largest group of linked sockets.
+Values
+Numeric
+Example
+LinkedSockets >= 5
+MapTier
+Filter maps by Map Tier.
+Values
+Numeric
+Example
+MapTier >= 15
+MemoryStrands
+Filter by an item's Memory Strands.
+Values
+Numeric
+Example
+MemoryStrands > 0
+New
+MirageMap
+Filter by Mirage Maps.
+Values
+True / False
+Example
+MirageMap True
+Mirrored
+Filter by mirrored items.
+Values
+True / False
+Example
+Mirrored False
+Quality
+Filter by Quality.
+Values
+Numeric
+Example
+Quality > 15
+Rarity
+Filter by Rarity.
+Values
+Normal, Magic, Rare, Unique
+Example
+Rarity > Magic
+Replica
+Filter by Replica unique items.
+Values
+True / False
+Example
+Replica True
+Scourged
+Filter by Scourged items.
+Values
+True / False
+Example
+Scourged True
+ShapedMap
+Filter by Shaped maps.
+Values
+True / False
+Example
+ShapedMap True
+ShaperItem
+Filter by Shaper items.
+Values
+True / False
+Example
+ShaperItem True
+SocketGroup
+Filter by groups of linked sockets on an item. The following example will show items that have 5 or more linked sockets with at least 3 of them being green sockets.
+Values
+Numeric, R:Red, G:Green, B:Blue, A:Abyss, D:Delve, W:White
+Example
+SocketGroup >= 5GGG
+Sockets
+Filter by number of sockets or colours on an item. The following example will show items that have 5 or more sockets with at least 3 of them being green sockets.
+Values
+Numeric, R:Red, G:Green, B:Blue, A:Abyss, D:Delve, W:White
+Example
+Sockets >= 5GGG
+StackSize
+Filter Currency by stack size.
+Values
+Numeric
+Example
+StackSize >= 5
+SynthesisedItem
+Filter by Synthesised Items.
+Values
+True / False
+Example
+SynthesisedItem True
+Updated
+TransfiguredGem
+Filter by transfigured gems by name. Use True to match any transfigured gem.
+Values
+True / False, Gem name
+Example
+TransfiguredGem "Leap Slam"
+PoE2-only
+TwiceCorrupted
+Filter by Twice Corrupted Items.
+Values
+True / False
+Example
+TwiceCorrupted True
+UberBlightedMap
+Filter by Blight Ravaged Maps.
+Values
+True / False
+Example
+UberBlightedMap True
+PoE2-only
+UnidentifiedItemTier
+Filter by the Unidentified Tier of item.
+Values
+Numeric
+Example
+UnidentifiedItemTier >= 4
+PoE2-only
+WaystoneTier
+Filter Waystones by tier.
+Values
+Numeric
+Example
+WaystoneTier >= 15
+Width
+The width of the item in your inventory.
+Values
+Numeric
+Example
+Width = 1
+ZanaMemory
+Filter by Zana Memory Maps.
+Values
+True / False
+Example
+ZanaMemory True
+Actions
+Actions can modify dropped items' colours, icons, visual effects and sounds.
+
+Drop Sound
+Name
+Description
+PlayAlertSound
+Plays a built-in alert sound when the item appears. Can be disabled by specifying "None".
+Values
+Name	Required	Value Options
+Id		1 - 16
+Volume		0 - 300 (Default Value: 50)
+Disabled Value
+None
+Example
+PlayAlertSound 1 100
+PlayAlertSoundPositional
+Similar to PlayAlertSound, but plays the alert sound at the item's 3D location.
+Values
+Name	Required	Value Options
+Id		1 - 16
+Volume		0 - 300 (Default Value: 50)
+Disabled Value
+None
+Example
+PlayAlertSoundPositional 16 50
+CustomAlertSound
+Plays the specified item alert sound file when the item appears. Multiple files can be specified, separated by a semicolon, in which case a random one will be played. Overrides PlayAlertSound and PlayAlertSoundPositional. Can be disabled by specifying "None".
+Values
+Name	Required	Value Options
+File name / File path		
+Volume		0 - 300 (Default Value: 100)
+Disabled Value
+"None"
+Example
+CustomAlertSound "Map.mp3"
+CustomAlertSoundOptional
+Similar to CustomAlertSound, but if the specified file does not exist then this line is ignored and it does not override PlayAlertSound or PlayAlertSoundPositional.
+Values
+Name	Required	Value Options
+File name / File path		
+Volume		0 - 300 (Default Value: 100)
+Example
+CustomAlertSoundOptional "Map.mp3"
+DisableDropSound
+Disables the item drop sound that normally plays when the item hits the ground during its drop animation.
+Example
+DisableDropSound
+EnableDropSound
+Re-enables the item drop sound.
+Example
+EnableDropSound
+DisableDropSoundIfAlertSound
+Similar to DisableDropSound, but only disables the item drop sound if an alert sound is specified (e.g. with PlayAlertSound or CustomAlertSound). This flag is separate from DisableDropSound.
+Example
+DisableDropSoundIfAlertSound
+EnableDropSoundIfAlertSound
+Re-enables drop sounds where an alert sound is specified.
+Example
+EnableDropSoundIfAlertSound
+
+Other Actions
+Name
+Description
+MinimapIcon
+Displays an icon on your minimap.
+Values
+Name	Required	Value Options
+Size		0 - 2
+Colour		Red, Green, Blue, Brown, White, Yellow, Cyan, Grey, Orange, Pink, Purple
+Shape		Circle, Diamond, Hexagon, Square, Star, Triangle, Cross, Moon, Raindrop, Kite, Pentagon, UpsideDownHouse
+Disabled Value
+-1
+Example
+MinimapIcon 2 Cyan Diamond
+PlayEffect
+Displays a coloured beam of light above an item highlighted by an item filter. When the value is Temp, the beam only appears as the item drops, Otherwise the beam will be permanently visible.
+Values
+Name	Required	Value Options
+Colour		Red, Green, Blue, Brown, White, Yellow, Cyan, Grey, Orange, Pink, Purple
+Temp		Temp
+Disabled Value
+None
+Example
+PlayEffect Red Temp
+SetBackgroundColor
+Sets the background colour of the item label.
+Values
+Name	Required	Value Options
+Red		0 - 255
+Green		0 - 255
+Blue		0 - 255
+Alpha		0 - 255 (Default Value: 240)
+Example
+SetBackgroundColor 255 255 255 255
+SetBorderColor
+Sets the border colour of the item label.
+Values
+Name	Required	Value Options
+Red		0 - 255
+Green		0 - 255
+Blue		0 - 255
+Alpha		0 - 255 (Default Value: 255)
+Example
+SetBorderColor 255 0 0
+SetFontSize
+Sets the font size of the item label.
+Values
+Name	Required	Value Options
+Size		1 - 45
+Example
+SetFontSize 30
+SetTextColor
+Sets the text colour of the item label. Ruthless filters must have an alpha value of 80 or above
+Values
+Name	Required	Value Options
+Red		0 - 255
+Green		0 - 255
+Blue		0 - 255
+Alpha		0 - 255 (Default Value: 255)
+Example
+SetTextColor 0 0 0
