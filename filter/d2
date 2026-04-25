@@ -14,6 +14,10 @@ Show
     SetFontSize 35
     MinimapIcon 2 White Circle
 Show
+    Class "Gems"
+    Quality >= 20
+    GemLevel >= 20
+Show
     Class "Currency" "Stackable Currency"
     MinimapIcon 2 White Circle
 Show
@@ -27,15 +31,7 @@ Show
     MinimapIcon 2 White Circle
 Show
     Class "Gems"
-    Quality > 0
-    MinimapIcon 2 White Circle
-Show
-    Class "Gems"
     BaseType "Vaal" "Awakened" "Empower" "Enlighten" "Enhance"
-    MinimapIcon 2 White Circle
-Show
-    Class "Gems"
-    GemLevel >= 19
     MinimapIcon 2 White Circle
 Hide
     Class "Gems"
