@@ -1,0 +1,46 @@
+Show
+    Class "Currency" "Stackable Currency"
+    MinimapIcon 2 White Circle
+Show
+    Class "Maps" "Map Fragments" "Misc Map Items"
+    MinimapIcon 2 White Circle
+Show
+    Rarity = Unique
+    MinimapIcon 2 Orange Star
+Show
+    Rarity = Rare
+    ItemLevel >= 75
+    Class "Rings" "Amulets" "Belts" "Jewels" "Abyss Jewel"
+    MinimapIcon 2 White Circle
+Show
+    Sockets >= 6
+    MinimapIcon 2 White Circle
+Show
+    SocketGroup "RGB"
+    Width <= 2
+    Height <= 4
+    MinimapIcon 2 White Circle
+Show
+    Class "Gems"
+    BaseType "Empower" "Enlighten" "Enhance"
+    MinimapIcon 2 White Circle
+Show
+    Class "Gems"
+    Quality >= 20
+    MinimapIcon 2 White Circle
+Show
+    Class "Gems"
+    Corrupted True
+    MinimapIcon 2 White Circle
+Hide
+    Class "Gems"
+Show
+    Class "Flasks"
+    Quality >= 10
+Hide
+    Class "Flasks"
+Hide
+    Rarity <= Rare
+    ItemLevel < 75
+    Class "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Bows" "Claws" "Daggers" "Rune Daggers" "One Hand Axes" "Two Hand Axes" "One Hand Maces" "Two Hand Maces" "One Hand Swords" "Two Hand Swords" "Thrusting One Hand Swords" "Sceptres" "Wands" "Staves" "Warstaves" "Quivers" "Rings" "Amulets" "Belts"
+Show

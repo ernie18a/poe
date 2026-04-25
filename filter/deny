@@ -1,0 +1,62 @@
+Show
+    Rarity = Unique
+    MinimapIcon 2 White Circle
+Show
+    FracturedItem True
+    MinimapIcon 2 White Circle
+Show
+    SynthesisedItem True
+    MinimapIcon 2 White Circle
+Show
+    HasInfluence Crusader Elder Hunter Redeemer Shaper Warlord
+    MinimapIcon 2 White Circle
+Show
+    HasExplicitMod "Veil"
+    MinimapIcon 2 White Circle
+Show
+    Class "Divination Card"
+    MinimapIcon 2 White Circle
+Show
+    Class "Quest Items"
+    MinimapIcon 2 White Circle
+Show
+    Class "Currency" "Stackable Currency"
+    BaseType != "Scroll of Wisdom" "Portal Scroll" "Gold"
+    MinimapIcon 2 White Circle
+Show
+    Class "Map Fragments" "Maps" "Misc Map Items"
+    MinimapIcon 2 White Circle
+Show
+    Rarity = Rare
+    Class "Rings" "Amulets" "Belts" "Jewels" "Abyss Jewel"
+    MinimapIcon 2 White Circle
+Show
+    Rarity = Rare
+    Class "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Wands" "Staves" "Warstaves"
+    ItemLevel >= 85
+    MinimapIcon 2 White Circle
+Show
+    Sockets >= 6
+    MinimapIcon 2 White Circle
+Show
+    Sockets >= 4
+    Width <= 2
+    Height <= 2
+    MinimapIcon 2 White Circle
+Show
+    SocketGroup "RGB"
+    Width <= 2
+    Height <= 3
+    MinimapIcon 2 White Circle
+Show
+    Class "Gems"
+    Quality >= 10
+    MinimapIcon 2 White Circle
+Show
+    Class "Gems"
+    BaseType "Vaal" "Awakened"
+    MinimapIcon 2 White Circle
+Show
+    BaseType "Gold"
+Hide
+    Rarity <= Rare
